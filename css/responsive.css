@@ -1,6 +1,6 @@
-/* lg */ 
+/* lg */
 @media (min-width: 1400px) {
-	
+
 }
 
 /* md */
@@ -12,7 +12,7 @@
 		font-size: 35px;
 		top: 25px;
 	}
-	.overlay a.folio-detail, 
+	.overlay a.folio-detail,
 	.overlay a.folio-link {
 		left: 30px;
 	}
@@ -40,11 +40,11 @@
 	#navigation .navbar-right li a {
 		padding: 10px 8px;
 	}
-	
+
 	#navigation .navbar-fixed-top .navbar-right li a {
 		padding: 15px 10px;
 	}
-	
+
 	.container>.carousel-arrows {
 		left:15px;
 	}
@@ -61,10 +61,10 @@
 		padding: 40px;
 	}
 	.overlay a.folio-detail {
-		top:50px;			
+		top:50px;
 		font-size:45px;
 	}
-	.overlay a.folio-detail, 
+	.overlay a.folio-detail,
 	.overlay a.folio-link {
 		left: 40px;
 	}
@@ -150,7 +150,7 @@
 		padding:15px 0 0 15px;
 	}
 	a.navbar-brand img {
-		margin-top: -32px;
+		/* margin-top: -32px; */
 		width: 50%;
 	}
 	.navbar-brand h1 {
@@ -168,9 +168,9 @@
 		padding: 6px 17px;
 		font-size: 12px;
 	}
-	#navigation .navbar-right li a.active, 
-	#navigation .navbar-right li a:hover, 
-	#navigation .navbar-right li a:focus, 
+	#navigation .navbar-right li a.active,
+	#navigation .navbar-right li a:hover,
+	#navigation .navbar-right li a:focus,
 	#navigation .navbar-right li.active a {
 		background-color:#bd1e26;
 	}
@@ -181,7 +181,7 @@
 	.carousel-caption {
 		top: 75px;
 	}
-	.carousel-caption h1, 
+	.carousel-caption h1,
 	.brand-content h2 {
 		font-size:20px;
 	}
@@ -192,7 +192,7 @@
 		top:260px;
 		left:15px;
 	}
-	.home-carousel-left, 
+	.home-carousel-left,
 	.home-carousel-right {
 		font-size:24px;
 	}
@@ -216,7 +216,7 @@
 	.padding-top {
 		padding-top: 45px
 	}
-	.padding-bottom, 
+	.padding-bottom,
 	.section-title {
 		padding-bottom: 45px;
 	}
@@ -244,8 +244,8 @@
 		width: 50%;
 		float: left;
 	}
-	.team-carousel-left, 
-	.team-carousel-right {		
+	.team-carousel-left,
+	.team-carousel-right {
 		bottom: -65px;
 		font-size: 18px;
 		height: 40px;
@@ -254,7 +254,7 @@
 	}
 	.team-carousel-left {
 		margin-left: -50px;
-	} 
+	}
 	.team-carousel-right{
 		margin-right: -50px;
 	}
@@ -277,19 +277,19 @@
 		font-size: 35px;
 		top:25px;
 	}
-	.overlay a.folio-detail, 
+	.overlay a.folio-detail,
 	.overlay a.folio-link {
 		left: 25px;
 	}
 	.overlay h2 {
-		top: 20%;	
+		top: 20%;
 	}
 	.overlay p {
 		top: 22%;
 		font-size: 12px;
 	}
 	/*Blog*/
-	
+
 	.entry-content {
 		padding: 10px 30px 30px;
 	}
@@ -327,9 +327,9 @@
 		overflow: hidden;
 	}
 	#clients-carousel .item ul li {
-		width: 50%;		
+		width: 50%;
 	}
-	
+
 	.client-left, .client-right {
 		display: none;
 	}
@@ -377,7 +377,7 @@
 	.portfolio-content .overlay {
 		padding: 100px 30px 30px 30px;
 	}
-	.overlay a.folio-detail, 
+	.overlay a.folio-detail,
 	.overlay a.folio-link {
 		left: 33px;
 	}
@@ -393,7 +393,7 @@
 	.skill-data {
 		line-height: 120px;
 	}
-	#team-carousel .carousel-inner .col-sm-3, 
+	#team-carousel .carousel-inner .col-sm-3,
 	.pricing-table .col-sm-3 {
 		width: 100%;
 		float: none;
@@ -404,7 +404,7 @@
 	.single-blog img {
 		width: 100%;
 	}
-	.blog-image, 
+	.blog-image,
 	.entry-content {
 		float: none;
 		width: 100%;
@@ -414,6 +414,5 @@
 		margin-bottom: 35px;
 	}
 	.change-logo {}
-	
-}
 
+}
