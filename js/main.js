@@ -7,7 +7,7 @@ $(document).ready(function($) {
 	$(window).load(function(){
 		$('.preloader').fadeOut('slow',function(){$(this).remove();});
 	});
-	
+
 	// Search
 	$('.fa-search').on('click', function() {
 		$('.field-toggle').slideToggle(200);
@@ -29,9 +29,9 @@ $(document).ready(function($) {
 				}
 			});
 		}else{
-			
+
 			$('.navbar').addClass('main-nav');
-				
+
 		};
 		if(windowWidth > 767 ){
 			$(window).on('scroll', function(){
@@ -41,37 +41,37 @@ $(document).ready(function($) {
 					$('.top-bar').removeClass('top-bar-hide');
 				}
 			});
-		}else{			
-			$('.top-bar').addClass(this);				
+		}else{
+			$('.top-bar').addClass(this);
 		};
-		
+
 		if(windowWidth > 767 ){
 			$(window).on('scroll', function(){
 				if( $(window).scrollTop()>405 ){
-					$('.navbar-brand').addClass('change-logo');
+					// $('.navbar-brand').addClass('change-logo');
 				} else {
-					$('.navbar-brand').removeClass('change-logo');
+					// $('.navbar-brand').removeClass('change-logo');
 				}
 			});
-		}else{			
-			$('.navbar-brand').addClass(this);				
+		}else{
+			$('.navbar-brand').addClass(this);
 		}
-				
+
 	}
 
 	menuToggle();
 
-	// Navigation Scroll	
-		
+	// Navigation Scroll
+
 	$(window).scroll(function(event) {
 		Scroll();
-	});	
-	
-	$('.navbar-collapse ul li a').click(function() {  
+	});
+
+	$('.navbar-collapse ul li a').click(function() {
 		$('html, body').animate({scrollTop: $(this.hash).offset().top -79}, 1000);
 		return false;
 	});
-	
+
 	// User define function
 	function Scroll() {
 		var contentTop      =   [];
@@ -87,7 +87,7 @@ $(document).ready(function($) {
 			if ( winTop > contentTop[i] - rangeTop ){
 				$('.navbar-collapse li.scroll')
 				.removeClass('active')
-				.eq(i).addClass('active');			
+				.eq(i).addClass('active');
 			}
 		})
 
@@ -97,23 +97,23 @@ $(document).ready(function($) {
 		$(".navbar-collapse").collapse('hide');
 		});
 	});
-	
+
 	//Parallax Scrolling
 	$(window).bind('load', function () {
-		parallaxInit();						  
+		parallaxInit();
 	});
-	function parallaxInit() {		
+	function parallaxInit() {
 		$("#promo-one").parallax("50%", 0.3);
 		$("#promo-two").parallax("50%", 0.3);
 		$("#fun-fact").parallax("50%", 0.3);
 		$("#news-letter").parallax("50%", 0.3);
-		$("#twitter").parallax("50%", 0.3);	
-	}	
-	parallaxInit();			
-		
-	
+		$("#twitter").parallax("50%", 0.3);
+	}
+	parallaxInit();
+
+
 	/**** Progress Bar ****/
-	    
+
 	$('.skill').appear();
 	$('.skill').on('appear', loadCharts);
 
@@ -159,12 +159,12 @@ $(document).ready(function($) {
 		} );
 	}
 
-	
+
 	//Pretty Photo
 	 $("a[data-gallery^='prettyPhoto']").prettyPhoto({
 	  social_tools: false
 	 });
-	
+
 	//Isotope
 	var winDow = $(window);
 			// Needed variables
@@ -190,7 +190,7 @@ $(document).ready(function($) {
 		var selector = $filter.find('a.active').attr('data-filter');
 
 		try {
-			$container.isotope({ 
+			$container.isotope({
 				filter	: selector,
 				animationOptions: {
 					duration: 750,
@@ -202,13 +202,13 @@ $(document).ready(function($) {
 		}
 		return false;
 	});
-	
-	// Isotope Filter 
+
+	// Isotope Filter
 	$filter.find('a').click(function(){
 		var selector = $(this).attr('data-filter');
 
 		try {
-			$container.isotope({ 
+			$container.isotope({
 				filter	: selector,
 				animationOptions: {
 					duration: 750,
@@ -232,7 +232,7 @@ $(document).ready(function($) {
 			$this.addClass('active');
 		}
 	});
-	
+
 	// Timer
 	$('#fun-fact').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
 		if (visible) {
@@ -252,10 +252,10 @@ $(document).ready(function($) {
 
 	//Initiat WOW JS
 	new WOW().init();
-	
+
 	//smoothScroll
 	smoothScroll.init();
-	
+
 	// Google Map Customization
 	(function(){
 
@@ -287,7 +287,7 @@ $(document).ready(function($) {
 		});
 
 
-		var styles = [ 
+		var styles = [
 
 		{
 			"featureType": "road",
@@ -328,11 +328,10 @@ $(document).ready(function($) {
 		map.addStyle({
 			styledMapName:"Styled Map",
 			styles: styles,
-			mapTypeId: "map_style"  
+			mapTypeId: "map_style"
 		});
 
 		map.setStyle("map_style");
-	}());		
-		
-});
+	}());
 
+});
