@@ -48,6 +48,11 @@ ul {
 	padding:0;
 }
 
+ol {
+	margin:0;
+	padding:0;
+}
+
 .navbar-nav li a:hover,
 .navbar-nav li a:focus {
 	outline:none;
