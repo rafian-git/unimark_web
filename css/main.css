@@ -1254,7 +1254,6 @@ h3.timer {
 	z-index: 1030;
 	border-radius:0;
 	transform:translate3d(0px, 0px, 0px);
-	transition:
 }
 
 #single-blog-page .animated {
@@ -1597,4 +1596,9 @@ h3.timer {
   display: table-cell;
   vertical-align: middle;
   margin: 0 auto;
+}
+
+.justify {
+	text-align: justify;
+	text-justify: inter-word;
 }
