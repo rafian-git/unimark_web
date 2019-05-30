@@ -1236,7 +1236,7 @@ h3.timer {
 #footer a.to-top:before {
 	content: "";
 	position: absolute;
-	border-color: transparent transparent #c7c7c7;
+	border-color: transparent transparent #3e3e3e;
 	border-style: solid;
 	border-width: 28px 60px;
 	left:-25px;
