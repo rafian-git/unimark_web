@@ -138,14 +138,14 @@
 		display: none;
 	}
 	.main-nav {
-		background-color: #d9232d;
+		background-color: #454545;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 	}
 	a.navbar-brand {
-		background-color:#bd1e26;
+		background-color:rgba(12,47,109,0.5);
 		height: 65px;
 		padding:15px 0 0 15px;
 	}
@@ -172,7 +172,7 @@
 	#navigation .navbar-right li a:hover,
 	#navigation .navbar-right li a:focus,
 	#navigation .navbar-right li.active a {
-		background-color:#bd1e26;
+		background-color:rgba(12,47,109,0.5);
 	}
 	/*Home Carousel*/
 	#home-carousel .item {
