@@ -74,7 +74,7 @@ a:focus,
 a:hover {
 	text-decoration: none;
 	outline: none;
-	color:rgba(69,69,69,1);
+	color:rgba(255,255,255,0.5);
 }
 
 h1 {
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-brand.change-logo {
 	height: 78px;
-	background-color: rgb(52,52,52);
+	background-color: rgba(12,47,109,0.5);
 	padding:0px;
 }
 
@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a.navbar-brand {
-	background-color: rgb(52,52,52);
+	background-color: rgba(12,47,109,0.5);
 	/* background-color: rgba(69,69,69,0.5); */
 	display: block;
 	height: 152px;
