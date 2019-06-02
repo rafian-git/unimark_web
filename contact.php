@@ -65,7 +65,7 @@
 						<li class="scroll"><a href="news_and_events.html">News & Events</a></li>
 						<li class="scroll"><a href="gallery.html">Gallery</a></li>
 						<li class="scroll"><a href="about.html">About</a></li>
-						<li class="scroll active"><a href="contact.html">Contact</a></li>
+						<li class="scroll active"><a href="contact.php">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -76,7 +76,7 @@
 	<br>
 	<br>
 	=======
-	<li class="scroll active"><a href="contact.html">Contact</a></li>
+	<li class="scroll active"><a href="contact.php">Contact</a></li>
 	</ul>
 	</nav>
 	</div>
