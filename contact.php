@@ -64,22 +64,23 @@
 						<li class="scroll"><a href="plot_booking.html">Plot Booking</a></li>
 						<li class="scroll"><a href="news_and_events.html">News & Events</a></li>
 						<li class="scroll"><a href="gallery.html">Gallery</a></li>
-                        <li class="scroll"><a href="about.html">About</a></li>
-                        <li class="scroll active"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header><!--/#navigation-->
-
-    <br>
-<br>
-=======
+						<li class="scroll"><a href="about.html">About</a></li>
 						<li class="scroll active"><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
+	</header>
+	<!--/#navigation-->
+
+	<br>
+	<br>
+	=======
+	<li class="scroll active"><a href="contact.html">Contact</a></li>
+	</ul>
+	</nav>
+	</div>
+	</div>
 	</header>
 	<!--/#navigation-->
 
@@ -121,7 +122,7 @@
 						<i class="fa fa-gear (alias)"></i>
 					</div> -->
 					<div class="service-text">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2108.877182063522!2d90.4033732211273!3d23.796521700411006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c78777d8cd83%3A0x4401a89073eb9a9e!2sUNIMARK+Holdings+LTD!5e0!3m2!1sen!2sbd!4v1559209465825!5m2!1sen!2sbd" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2108.877182063522!2d90.4033732211273!3d23.796521700411006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c78777d8cd83%3A0x4401a89073eb9a9e!2sUNIMARK+Holdings+LTD!5e0!3m2!1sen!2sbd!4v1559209465825!5m2!1sen!2sbd" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 						<!-- <h4>Theme Options</h4>
 						<p>voluptatem accusantium.Sed ut perspiciatis unde omnis</p> -->
 					</div>
@@ -146,6 +147,18 @@
 						consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus
 						eget sagittis imperdiet.</p>
 				</div>
+				<?php
+				if (isset($_GET["error"])) {
+					echo "<div style='text-align:center' class='alert alert-danger'>
+												<strong>Failed!</strong> Unable to send your message. Please Try Again.
+											</div>";
+				} else if (isset($_GET["success"])) {
+					echo "<div style='text-align:center' class='alert alert-success'>
+												<strong>Thank You!</strong> Your message has been sent.
+											</div>";
+				}
+
+				?>
 			</div>
 			<div class="contact-content">
 				<div class="row">
@@ -153,23 +166,19 @@
 
 					<div class="col-sm-12 wow zoomIn" data-wow-duration="700ms" data-wow-delay="500ms">
 						<!-- <h2>Visit Our Office</h2> -->
-						<form id="contact-form" class="contact-form" name="contact-form" method="post" action="#">
+						<form id="contact-form" class="contact-form" name="contact-form" method="post" action="mail.php">
 							<div class="row">
 								<div class="form-group col-sm-6 name-field">
-									<input type="text" name="name" class="form-control" required="required"
-										placeholder="Name">
+									<input type="text" name="name" class="form-control" required="required" placeholder="Name">
 								</div>
 								<div class="form-group col-sm-6 email-field">
-									<input type="email" name="email" class="form-control" required="required"
-										placeholder="Email Id">
+									<input type="email" name="email" class="form-control" required="required" placeholder="Email Id">
 								</div>
 								<div class="form-group col-sm-12 email-field">
-									<input type="email" name="subject" class="form-control" required="required"
-										placeholder="Subject">
+									<input type="text" name="subject" class="form-control" required="required" placeholder="Subject">
 								</div>
 								<div class="form-group col-sm-12">
-									<textarea name="message" id="message" required="required" class="form-control"
-										rows="8" placeholder="Your Text"></textarea>
+									<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your Text"></textarea>
 								</div>
 							</div>
 							<div class="form-group">
