@@ -146,19 +146,19 @@
 					<p class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">Lorem ipsum dolor sit amet,
 						consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus
 						eget sagittis imperdiet.</p>
-				</div>
-				<?php
-				if (isset($_GET["error"])) {
-					echo "<div style='text-align:center' class='alert alert-danger'>
+					<?php
+					if (isset($_GET["error"])) {
+						echo "<div style='text-align:center' class='alert alert-danger'>
 												<strong>Failed!</strong> Unable to send your message. Please Try Again.
 											</div>";
-				} else if (isset($_GET["success"])) {
-					echo "<div style='text-align:center' class='alert alert-success'>
+					} else if (isset($_GET["success"])) {
+						echo "<div style='text-align:center' class='alert alert-success'>
 												<strong>Thank You!</strong> Your message has been sent.
 											</div>";
-				}
+					}
 
-				?>
+					?>
+				</div>
 			</div>
 			<div class="contact-content">
 				<div class="row">
