@@ -9,9 +9,9 @@ $mailheader = "From: $email \r\n";
 
 if(mail($recipient, $subject, $formcontent, $mailheader))
 {
-    header("Location: contact.php#msg?success=1");
+    header("Location: contact.php?success=1");
     // print_r($_POST);
 }
 else
-    header("Location: contact.php#msg?error=1");
+    header("Location: contact.php?error=1");
 ?>

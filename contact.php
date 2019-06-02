@@ -90,6 +90,18 @@
 		<div class="container text-center">
 			<div class="row section-title">
 				<div class="col-sm-6 col-sm-offset-3">
+					<?php
+					if (isset($_GET["error"])) {
+						echo "<div style='text-align:center' class='alert alert-danger'>
+												<strong>Failed!</strong> Unable to send your message. Please Try Again.
+											</div>";
+					} else if (isset($_GET["success"])) {
+						echo "<div style='text-align:center' class='alert alert-success'>
+												<strong>Thank You!</strong> Your message has been sent.
+											</div>";
+					}
+
+					?>
 					<h3 class="wow fadeInDown" data-wow-duration="700ms" data-wow-delay="300ms">Get in Touch</h3>
 					<hr class="title-border">
 					<p class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">We're committed to helping
@@ -146,18 +158,6 @@
 					<p id="msg" class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">Lorem ipsum dolor sit amet,
 						consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus
 						eget sagittis imperdiet.</p>
-					<?php
-					if (isset($_GET["error"])) {
-						echo "<div style='text-align:center' class='alert alert-danger'>
-												<strong>Failed!</strong> Unable to send your message. Please Try Again.
-											</div>";
-					} else if (isset($_GET["success"])) {
-						echo "<div style='text-align:center' class='alert alert-success'>
-												<strong>Thank You!</strong> Your message has been sent.
-											</div>";
-					}
-
-					?>
 				</div>
 			</div>
 			<div class="contact-content">
