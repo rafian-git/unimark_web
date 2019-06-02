@@ -143,7 +143,7 @@
 				<div class="col-sm-6 col-sm-offset-3">
 					<h3 class="wow fadeInDown" data-wow-duration="700ms" data-wow-delay="300ms">Write to Us</h3>
 					<hr class="title-border">
-					<p class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">Lorem ipsum dolor sit amet,
+					<p id="msg" class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">Lorem ipsum dolor sit amet,
 						consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus
 						eget sagittis imperdiet.</p>
 					<?php
