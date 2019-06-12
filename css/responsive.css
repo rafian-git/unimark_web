@@ -1,10 +1,20 @@
+#spn{
+	 width: 16px;
+}
+
 /* lg */
 @media (min-width: 1400px) {
+	#spn{
+		 width: 16px;
+	}
 
 }
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
+	#spn{
+		 width: 15px;
+	}
 	.brand-content {
 		padding: 25px 20px;
 	}
@@ -34,6 +44,9 @@
 
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
+	#spn{
+		 width: 15px;
+	}
 	#navigation .navbar-right {
 		margin-right: 13px;
 	}
@@ -117,6 +130,9 @@
 
 /* xs */
 @media (max-width: 767px) {
+	#spn{
+		 width: 15px;
+	}
 	body {
 		font-size: 14px;
 	}
